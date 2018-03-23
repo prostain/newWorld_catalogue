@@ -22,4 +22,7 @@ HEADERS += \
     produit.h \
     variete.h \
     collProduit.h \
-    collVariete.h
+    collVariete.h \
+    consommateur.h \
+    distributeur.h \
+    collDistrib.h
