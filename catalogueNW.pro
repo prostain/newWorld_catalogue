@@ -4,9 +4,9 @@
 #
 #-------------------------------------------------
 
-QT       += core
+QT       += core sql
 
-QT       -= gui
+QT       += gui
 
 TARGET = catalogueNW
 CONFIG   += console
