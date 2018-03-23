@@ -13,7 +13,7 @@ private :
     int idRayon;
     QString libelleRayon;
 
-    CollProduit lesProduits;
+    CollProduit sesProduits;
 
 public :
 
