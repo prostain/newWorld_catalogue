@@ -1,0 +1,30 @@
+#ifndef PASSERELLE_H
+#define PASSERELLE_H
+
+#include <iostream>
+#include <QString>
+#include "collDistrib.h"
+#include "distributeur.h"
+#include "collProduit.h"
+#include "produit.h"
+#include "collVariete.h"
+#include "variete.h"
+//#include "jeuEnregistrement.h"
+
+using namespace std;
+
+
+class Passerelle {
+ public : //à portée de classe (statique);
+
+    static CollDistrib chargerLesDistributeur(int idConsommateur);// Retourne la collection des distributeur
+
+    static CollProduit chargerLesProduits();// Instancie et retourne une collection d’objets de la classe Produit, à partir des données lues dans la base de données.
+    
+    static CollVariete chargerLesVarietes(); //Instancie et retourne une collection de la classe Variete
+};
+
+#endif
+
+
+#endif // PASSERELLE_H

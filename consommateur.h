@@ -9,6 +9,7 @@ class Consommateur
 {
 private :
 
+        int idConso;
         QString nomConso;
         QString prenomConso;
 
@@ -16,7 +17,7 @@ private :
 
 public :
 
-        Consommateur (QString unNomConso, QString unPrenomConso, collDistrib uneCollDistrib);
+        Consommateur (int unIdConso, QString unNomConso, QString unPrenomConso, CollDistrib uneCollDistrib);
 
         QString versChaine();
 

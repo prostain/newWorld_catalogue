@@ -15,7 +15,8 @@ CONFIG   -= app_bundle
 TEMPLATE = app
 
 
-SOURCES += main.cpp
+SOURCES += main.cpp \
+    consommateur.cpp
 
 HEADERS += \
     rayon.h \
@@ -26,4 +27,5 @@ HEADERS += \
     consommateur.h \
     distributeur.h \
     collDistrib.h \
-    lot.h
+    lot.h \
+    passerelle.h
