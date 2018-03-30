@@ -5,6 +5,8 @@
 #include <QString>
 #include <sstream>
 
+using namespace std;
+
 class Variete
 {
 private :
@@ -16,7 +18,7 @@ private :
 
 public :
 
-    Variete (int unIdVariete, QString unLibelleVariete, QString uneImgVariete, float unPrix);
+    Variete (int unIdVariete, QString unLibelleVariete, QString uneImgVariete);
 
     QString versChaine();
 

@@ -2,6 +2,9 @@
 #define COLLVARIETE_H
 
 #include "variete.h"
+#include <vector>
+
+using namespace std;
 
 class CollVariete
 {

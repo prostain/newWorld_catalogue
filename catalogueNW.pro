@@ -17,7 +17,15 @@ TEMPLATE = app
 
 SOURCES += main.cpp \
     consommateur.cpp \
-    passerelle.cpp
+    passerelle.cpp \
+    distributeur.cpp \
+    produit.cpp \
+    rayon.cpp \
+    variete.cpp \
+    lot.cpp \
+    collDistrib.cpp \
+    collProduit.cpp \
+    collVariete.cpp
 
 HEADERS += \
     rayon.h \
@@ -29,4 +37,5 @@ HEADERS += \
     distributeur.h \
     collDistrib.h \
     lot.h \
-    passerelle.h
+    passerelle.h \
+    pdf.h

@@ -2,6 +2,7 @@
 #define COLLDISTRIB_H
 
 #include "distributeur.h"
+#include <vector>
 
 class CollDistrib
 {

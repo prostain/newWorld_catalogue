@@ -16,7 +16,9 @@ private :
 
 public :
 
+    Lot(int unIdVariete, QString unLibelleVariete, QString uneImgVariete, float unPrix, QString uneUMesuse, QString unModeProd, QString uneDateLimite, float uneQteDispo, QString unProducteur);
 
+    QString versChain();
 };
 
 #endif // LOT_H

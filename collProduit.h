@@ -2,6 +2,7 @@
 #define COLLPRODUIT_H
 
 #include "produit.h"
+#include <vector>
 
 class CollProduit
 {
@@ -15,7 +16,7 @@ public :
 
     Produit obtenirObjet(int index);
 
-    void ajouter(Produit unPorduit);
+    void ajouter(Produit unProduit);
 };
 
 #endif // COLLPRODUIT_H
