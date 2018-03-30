@@ -1,4 +1,5 @@
 #ifndef PASSERELLE_H
+<<<<<<< HEAD
 #define PASSERELLE_H
 
 #include <iostream>
@@ -26,3 +27,22 @@ class Passerelle {
 
 
 #endif // PASSERELLE_H
+=======
+    #define PASSERELLE_H
+
+#include <iostream>
+#include "coll.h"
+#include "collProduit.h"
+#include "collVariete.h"
+#include <QString>
+
+using namespace std;
+class Passerelle
+{
+public:
+    static ColEquipement chargerLesRayons();
+    static ColBateauVoyageur chargerLesProduits();
+};
+
+#endif
+>>>>>>> 14b7184ff94b7df253e80c6a7ee277437646b986
