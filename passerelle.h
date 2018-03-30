@@ -15,6 +15,28 @@ class Passerelle {
 
     static CollProduit chargeLesProdtuis(int idRayon);// Retourne la collection des Produits du Rayon dont l'identifiant est passé en paramètre.
 
+<<<<<<< HEAD
     static CollVariete chargerLesVariete();// Instancie et retourne une collection d’objets de la classe Variete, à partir des données lues dans la base de données
+=======
+#endif
+
+
+#endif // PASSERELLE_H
+=======
+    #define PASSERELLE_H
+
+#include <iostream>
+#include "collProduit.h"
+#include "collVariete.h"
+#include <QString>
+
+using namespace std;
+class Passerelle
+{
+public:
+    static ColEquipement chargerLesRayons();
+    static ColBateauVoyageur chargerLesProduits();
+};
+>>>>>>> 4773c6e6a5d897801b20f90d8779df097a9eb663
 
 #endif
