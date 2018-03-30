@@ -13,9 +13,10 @@ private :
     QString libelleVariete;
     QString imgVariete;
 
+
 public :
 
-    Variete (int unIdVariete, QString unLibelleVariete, QString uneImgVariete);
+    Variete (int unIdVariete, QString unLibelleVariete, QString uneImgVariete, float unPrix);
 
     QString versChaine();
 

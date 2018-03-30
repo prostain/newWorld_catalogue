@@ -25,4 +25,5 @@ HEADERS += \
     collVariete.h \
     consommateur.h \
     distributeur.h \
-    collDistrib.h
+    collDistrib.h \
+    lot.h
