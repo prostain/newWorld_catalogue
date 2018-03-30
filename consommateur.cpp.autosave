@@ -1,9 +1,0 @@
-#include "consommateur.h"
-
-Consommateur::Consommateur(int unIdConso, QString unNomConso, QString unPrenomConso, CollDistrib uneCollDistrib)
-{
-    idConso = unIdConso;
-    nomConso = unNomConso;
-    prenomConso = unPrenomConso;
-    sesDistrib = uneCollDistrib;
-}
