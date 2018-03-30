@@ -15,11 +15,13 @@ CONFIG   -= app_bundle
 TEMPLATE = app
 
 
-SOURCES += main.cpp
+SOURCES += main.cpp \
+    passerelle.cpp
 
 HEADERS += \
     rayon.h \
     produit.h \
     variete.h \
     collProduit.h \
-    collVariete.h
+    collVariete.h \
+    passerelle.h
