@@ -16,7 +16,7 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp \
-    consommateur.cpp
+    consommateur.cpp \
     passerelle.cpp
 
 HEADERS += \
