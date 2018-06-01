@@ -11,13 +11,16 @@ class Distributeur
 {
 private :
 
+        QString idDistrib;
         QString libelleDistrib;
 
 public :
 
-    Distributeur (QString unLibelleDistrib);
+    Distributeur (QString idDistrib, QString unLibelleDistrib);
 
     QString versChaine();
+
+    QString getId();
 
 };
 

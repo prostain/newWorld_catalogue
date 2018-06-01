@@ -1,6 +1,6 @@
 #include "produit.h"
 
-Produit::Produit(int unIdProduit, QString unNomProduit, CollVariete uneCollVariete)
+Produit::Produit(QString unIdProduit, QString unNomProduit, CollVariete uneCollVariete)
 {
     idProduit = unIdProduit;
     nomProduit = unNomProduit;
@@ -9,9 +9,16 @@ Produit::Produit(int unIdProduit, QString unNomProduit, CollVariete uneCollVarie
 
 QString Produit::versChaine()
 {
+    qDebug("QString Produit::versChaine()");
     stringstream rslt;
 
     rslt << nomProduit.toStdString();
 
     return QString(rslt.str().c_str());
+}
+
+QString Produit::getId()
+{
+    qDebug("QString Produit::getId()");
+    return idProduit;
 }

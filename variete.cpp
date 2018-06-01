@@ -1,7 +1,7 @@
 #include "variete.h"
 
 
-Variete::Variete(int unIdVariete, QString unLibelleVariete, QString uneImgVariete)
+Variete::Variete(QString unIdVariete, QString unLibelleVariete, QString uneImgVariete)
 {
     idVariete = unIdVariete;
     libelleVariete = unLibelleVariete;
@@ -10,6 +10,7 @@ Variete::Variete(int unIdVariete, QString unLibelleVariete, QString uneImgVariet
 
 QString Variete::versChaine()
 {
+    qDebug("QString Variete::versChaine()");
     stringstream rslt;
 
     rslt << libelleVariete.toStdString();
@@ -19,5 +20,12 @@ QString Variete::versChaine()
 
 QString Variete::getImgVariete()
 {
+    qDebug("QString Variete::getImgVariete()");
     return imgVariete;
+}
+
+QString Variete::getId()
+{
+    qDebug("QString Variete::getId()");
+    return idVariete;
 }

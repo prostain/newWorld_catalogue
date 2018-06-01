@@ -1,6 +1,6 @@
 #include "lot.h"
 
-Lot::Lot(int unIdVariete, QString unLibelleVariete, QString uneImgVariete, float unPrix, QString uneUMesuse, QString unModeProd, QString uneDateLimite, float uneQteDispo, QString unProducteur)
+Lot::Lot(QString unIdVariete, QString unLibelleVariete, QString uneImgVariete, float unPrix, QString uneUMesuse, QString unModeProd, QString uneDateLimite, float uneQteDispo, Producteur unProducteur)
     :Variete(unIdVariete, unLibelleVariete, uneImgVariete)
 {
     prixU = unPrix;
@@ -11,14 +11,14 @@ Lot::Lot(int unIdVariete, QString unLibelleVariete, QString uneImgVariete, float
     sonProducteur = unProducteur;
 }
 
-QString Lot::versChain()
+QString Lot::versChaine()
 {
     stringstream rslt;
 
-    rslt << "Prix par " << uniteMesure.toStdString() << ": " << prixU;
+    rslt << "Prix :" <<  prixU << "€" << "/" << uniteMesure.toStdString();
     rslt << "Date limite de consommation : " << dateLimite.toStdString();
     rslt << "Quantité disponible : " << QteDispo;
-    rslt << "Proposé par : " << sonProducteur.toStdString();
+    rslt << "Proposé par : " << sonProducteur.versChaine().toStdString();
 
     return QString(rslt.str().c_str());
 }

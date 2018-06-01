@@ -9,6 +9,7 @@ Rayon::Rayon(int unIdRayon, QString unLibelleRayon, CollProduit uneCollProduit)
 
 QString Rayon::versChaine()
 {
+    qDebug("QString Rayon::versChaine()");
     stringstream rslt;
 
     rslt << libelleRayon.toStdString() ;

@@ -11,17 +11,18 @@ class Variete
 {
 private :
 
-    int idVariete;
+    QString idVariete;
     QString libelleVariete;
     QString imgVariete;
 
 
 public :
 
-    Variete (int unIdVariete, QString unLibelleVariete, QString uneImgVariete);
+    Variete (QString unIdVariete, QString unLibelleVariete, QString uneImgVariete);
 
     QString versChaine();
 
+    QString getId();
     QString getImgVariete();
 };
 

@@ -1,5 +1,5 @@
 #ifndef PDF_H
-#define PDF_H
+    #define PDF_H
 
 #include <iostream>
 #include <QString>
@@ -26,6 +26,6 @@ public:
 
     void imprimer();
 
-}
+};
 
 #endif // PDF_H

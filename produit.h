@@ -12,16 +12,18 @@ class Produit
 {
 private :
 
-    int idProduit;
+    QString idProduit;
     QString nomProduit;
 
     CollVariete sesVarietes;
 
 public :
 
-    Produit(int unIdProduit, QString unNomProduit, CollVariete uneCollVariete);
+    Produit(QString unIdProduit, QString unNomProduit, CollVariete uneCollVariete);
 
     QString versChaine();
+
+    QString getId();
 };
 
 #endif // PRODUIT_H

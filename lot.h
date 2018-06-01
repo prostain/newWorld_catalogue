@@ -2,6 +2,7 @@
 #define LOT_H
 
 #include "variete.h"
+#include "producteur.h"
 
 class Lot : public Variete
 {
@@ -12,13 +13,13 @@ private :
     QString modeProd;
     QString dateLimite;
     float QteDispo;
-    QString sonProducteur;
+    Producteur sonProducteur;
 
 public :
 
-    Lot(int unIdVariete, QString unLibelleVariete, QString uneImgVariete, float unPrix, QString uneUMesuse, QString unModeProd, QString uneDateLimite, float uneQteDispo, QString unProducteur);
+    Lot(QString unIdVariete, QString unLibelleVariete, QString uneImgVariete, float unPrix, QString uneUMesure, QString unModeProd, QString uneDateLimite, float uneQteDispo, Producteur unProducteur);
 
-    QString versChain();
+    QString versChaine();
 };
 
 #endif // LOT_H
