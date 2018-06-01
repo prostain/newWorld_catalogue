@@ -8,8 +8,8 @@ int main(int argc, char *argv[])
 
     QSqlDatabase db = QSqlDatabase::addDatabase("QMYSQL");
        db.setHostName("localhost");
-       db.setUserName("rbayeux");
-       db.setPassword("ini01");
+       db.setUserName("*****");
+       db.setPassword("*****");
        db.setDatabaseName("newWorld");
        db.open();
 
